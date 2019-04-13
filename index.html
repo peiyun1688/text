@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
+    <!-- 
+        CSS套用順序
+        important -> 行內 -> 頁面內的 -> 外部檔案
+    -->
+        <style>
+            h1{
+                /* 文字顏色 */
+                color:blue !important;
+            }
+    
+            /* .代表class */
+            .blue{
+                color:blue !important;
+            }
+            .big{
+                /* 文字大小 */
+                font-size: 50px;
+            }
+            .italic{
+                font-style: italic;
+            }
+            .bold{
+                /* bold 粗體 bolder 加粗 */
+                font-weight: bold;
+            }
+            /* 代表網頁所有東西  */
+            *{
+                font-family: 'Dokdo', '微軟正黑體';
+            }
+            .center{
+                /* 文字位置 left 左 center 中 right 右 */
+                text-align: center;
+            }
+            /* 同時符合兩個class */
+            .blue.center{
+                /* 
+                overline 上面的線 
+                line-through刪除線
+                underline底線
+                */
+                text-decoration: line-through;
+            }
+            a{
+                text-decoration: none;
+                color:green;
+            }
+            a:hover{
+                color:tomato;
+            }
+            a:visited{
+                color:violet;
+            }
+            a:active{
+                color:yellowgreen;
+            }
+            .shadow{
+                /* text-shadow 水平距離 垂直距離 模糊距離 顏色 */
+                text-shadow: 0px 0px 10px red;
+            }
+            p:hover{
+                /* font-size: 200px; */
+                color:blue;
+                text-shadow: 0px 0px 10px red;
+            }
+            #Koala{
+			/* 粗細 樣式 顏色 */
+			border:10px solid blue;
+		}
+		#Penguins{
+			/* border-top:10px solid blue; */
+			/* border-right:10px dashed red; */
+			/* border-bottom:10px dotted green; */
+			/* border-left:10px inset purple; */
+			/* 圓角 */
+			/* border-radius: 50%; */
+			/* box-shadow 水平距離 垂直距離 模糊距離 陰影尺寸 顏色 */
+			box-shadow: 0px 0px 2px 2px red;
+			/* 透明度 0.0~1.0 */
+			/* opacity: 0.5; */
+
+			/* filter:blur(2px); */
+		}
+		#idea{
+			/* drop-shadow 根據png的輪廓產生陰影
+			box-shadow 水平距離 垂直距離 模糊距離 顏色 */
+			filter: drop-shadow(0px 0px 10px red);
+		}
+        body{
+			/* linear-gradient(to方向/角度deg, 顏色1, 顏色2 變色%,顏色3 變色%...); */
+			/* background-image: linear-gradient(to bottom right, orange, pink); */
+            background-image:yellow;
+			/* radial-gradient(circle/ellipse, 顏色1, 顏色2 變色%,顏色3 變色%...) */
+			/* background-image: radial-gradient(circle, red, blue, orange, pink); */
+			width: 100vw;
+			height:100vh;
+			color:white;
+		}
+        </style>
+    </head>
+    <body>
+        <h2 style="font-size: 0em; margin: 0;">
+                泰山訓練場</h2>
+        <p class="big center">泰山職訓局</p>
+        <p class="center"><img src="tailogo.jpg" alt="center" id="Penguins"width="60%" height="60%"></p>
+        <br>
+        <!-- 長表格 -->
+        <p class="big center">
+<table border="0" align="center">
+        <thead>
+            <tr>
+                <th>便當</th>
+                <th>數量</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>雞腿飯</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>排骨飯</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>總數量</td>
+                <td>3</td>
+            </tr>
+            </tfoot>
+    </table>
+</p>
+    <br>
+    <a href="https://www.taiwanjobs.gov.tw/Internet/index/CourseQuery_step.aspx">相關職訓連結</a>
+    </body>
+</html>
